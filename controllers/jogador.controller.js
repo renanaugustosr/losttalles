@@ -21,7 +21,7 @@ exports.create = (req, res) => {
             res.send(data);
         }).catch(err => {
             res.status(500).send({
-                message: err.message || "Alguma coisa deu errado quando tentei gravar o jogador"
+                message: err.message || "Alguma coisa deu errado quando tentei gravar o jogador!"
             });
         });
 };
