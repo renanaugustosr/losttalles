@@ -1,1 +1,1 @@
-web: yard start
+web: yarn start
