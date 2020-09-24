@@ -3,7 +3,7 @@ const Jogador = require('../models/jogador.model');
 // Create and Save a new Jogador
 exports.create = (req, res) => {
     // Validate request
-    if (!req.body.content) {
+    if (!req.body) {
         return res.status(400).send({
             message: "jogador está em branco"
         });
