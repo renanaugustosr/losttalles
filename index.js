@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 //rotas
-require('./app/routes/note.routes.js')(app);
+require('./app/routes/jogador.routes.js')(app);
 
 // define a simple route
 app.get('/', (req, res) => {
