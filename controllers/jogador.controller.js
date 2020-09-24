@@ -29,6 +29,15 @@ exports.create = (req, res) => {
 // Retrieve and return all Jogadors from the database.
 exports.findAll = (req, res) => {
 
+    Jogador.find()
+    .then(jogadores => {
+        res.send(jogadores);
+    }).catch(err => {
+        res.status(500).send({
+            message: err.message || "Some error occurred while retrieving notes."
+        });
+    });
+
 };
 
 // Find a single Jogador with a JogadorId
