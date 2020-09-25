@@ -11,8 +11,8 @@ exports.create = (req, res) => {
 
     // Create a Note
     const jogador = new Jogador({
-        nome: req.body.title,
-        telefone: req.body.content
+        nome: req.body.nome,
+        telefone: req.body.telefone
     });
 
     // Save Note in the database
